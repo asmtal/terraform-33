@@ -1,0 +1,10 @@
+name: "Setup Terraform environment"
+description: "Setup a Terraform environment and add it to the PATH"
+inputs:
+  version: # id of input
+    description: "The terraform version to download (if necessary) and use. Example: 0.12.13"
+    required: true
+    default: "0.12.13"
+runs:
+  using: "node12"
+  main: "dist/index.js"
